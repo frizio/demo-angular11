@@ -10,6 +10,7 @@ import { LoginComponent } from './components/auth/login/login.component';
 import { TrainingComponent } from './components/training/training.component';
 import { CurrentTrainingComponent } from './components/training/current-training/current-training.component';
 import { NewTrainingComponent } from './components/training/new-training/new-training.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NewTrainingComponent } from './components/training/new-training/new-tra
     LoginComponent,
     TrainingComponent,
     CurrentTrainingComponent,
-    NewTrainingComponent
+    NewTrainingComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
