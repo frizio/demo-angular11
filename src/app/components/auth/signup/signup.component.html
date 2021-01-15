@@ -12,11 +12,10 @@
     <mat-form-field hintLabel="Deve essere lungo almeno 6 caratteri">
       <input type="password" matInput placeholder="Your Password" ngModel name="password"
              required minlength="6" #passwordInput="ngModel">
-      <mat-hint>{{passwordInput.value.length}} / 6</mat-hint>
     </mat-form-field>
 
     <mat-form-field>
-      <input matInput placeholder="Data di Nascita" [matDatepicker]='picker'>
+      <input matInput placeholder="Data di Nascita" [matDatepicker]="picker" [max]="maxDate">
       <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
       <mat-datepicker #picker></mat-datepicker>
     </mat-form-field>
